@@ -1,0 +1,103 @@
+@media only screen and (max-width: 480px) {
+    .chart {
+        display: none;
+    }
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+@media only screen and (min-width: 480px) {
+    .mobileheader {
+        display: none;
+
+    }
+
+}
+
+
+
+
+.mobile-container {
+    max-width: 480px;
+    margin: auto;
+    background-color: #555;
+    height: 500px;
+    color: white;
+    border-radius: 10px;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+}
+
+.topnav #myLinks {
+    display: none;
+}
+
+.topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+.topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+li>ul {
+    transform: translatex(100%) scale(0)
+}
+
+li:hover>ul {
+    transform: translatex(-100%) scale(1)
+}
+
+li>button svg {
+    transform: rotate(-90deg)
+}
+
+li:hover>button svg {
+    transform: rotate(-270deg)
+}
+
+/* Below styles fake what can be achieved with the tailwind config
+   you need to add the group-hover variant to scale and define your custom
+   min width style.
+   See https://codesandbox.io/s/tailwindcss-multilevel-dropdown-y91j7?file=/index.html
+   for implementation with config file
+*/
+.group:hover .group-hover\:scale-100 {
+    transform: scale(1)
+}
+
+.group:hover .group-hover\:-rotate-180 {
+    transform: rotate(180deg)
+}
+
+.scale-0 {
+    transform: scale(0)
+}
+
+.min-w-32 {
+    min-width: 8rem
+}
